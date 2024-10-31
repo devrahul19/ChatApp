@@ -30,14 +30,13 @@ public class Server extends JFrame implements ActionListener {
             }
         });
 
-
-        ImageIcon i4 = new ImageIcon(ClassLoader.getSystemResource("icons/3.png"));
-        Image i5 = i1.getImage().getScaledInstance(25, 25, Image.SCALE_DEFAULT);
+        ImageIcon i4 = new ImageIcon(ClassLoader.getSystemResource("icons/user.png"));
+        Image i5 = i4.getImage().getScaledInstance(25, 25, Image.SCALE_DEFAULT);
         ImageIcon i6 = new ImageIcon(i5);
 
-        JLabel back = new JLabel(i3);
-        back.setBounds(5, 20, 25, 25);
-        p1.add(back);
+        JLabel profile = new JLabel(i6);
+        profile.setBounds(40, 5, 50, 50);
+        p1.add(profile);
 
         // Window Size
         setSize(450, 700);
